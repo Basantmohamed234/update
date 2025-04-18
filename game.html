@@ -1,0 +1,105 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>تفاصيل اللعبة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .game-details {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #bbbbbb;
+      margin-top: 30px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    #game-image {
+      width: 60%;
+      display: block;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    #play-button {
+      display: block;
+      margin: 0 auto 30px auto;
+      padding: 10px 30px;
+      font-size: 16px;
+      color: #ffffff;
+      background: linear-gradient(to right, #444, #666);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #play-button:hover {
+      background: linear-gradient(to right, #666, #888);
+    }
+
+    p {
+      color: #dddddd;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+        <div class="user-actions">
+            <a href="index.html" class="home-icon" title="الصفحة الرئيسية">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="signin.html"><i class="fas fa-sign-in-alt"></i> دخول</a> | 
+            <a href="signup.html"><i class="fas fa-user-plus"></i> تسجيل</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+        </div>
+       
+    </div>
+    <div class="main-header">
+        <h1></h1>
+    </div>
+   
+</header>
+  <main class="game-details">
+    <h1 id="game-title"></h1>
+    <img id="game-image" alt="صورة اللعبة">
+    <button id="play-button">Start Play</button>
+    <section>
+      <h2>وصف اللعبة:</h2>
+      <p id="game-description"></p>
+    </section>
+   
+  </main>
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - موقع ألعاب ممتعة</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

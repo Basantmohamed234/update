@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="user-actions">
+                <a href="index.html" class="home-icon" title="الصفحة الرئيسية">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="signin.html"><i class="fas fa-sign-in-alt"></i> دخول</a> | 
+                <a href="signup.html"><i class="fas fa-user-plus"></i> تسجيل</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            </div>
+           
+        </div>
+        <div class="main-header">
+            <h1>اتصل بنا</h1>
+        </div>
+      
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>تواصل معنا</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">اسمك:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+                <label for="message">رسالتك:</label>
+                <textarea id="message" name="message" placeholder="أدخل رسالتك هنا" rows="5" required></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة - موقع ألعاب ممتعة</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
